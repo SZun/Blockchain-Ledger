@@ -6,46 +6,46 @@ import datetime as datetime
 import pandas as pd
 import hashlib
 
+# Record class
 @dataclass
 class Record:
+
+    # Instance varibales
     sender: str
     receiver: str
     amount: str
 
-
+# Block Class
 @dataclass
 class Block:
 
+    # Instance Variables
     record: Record
-
     creator_id: int
     prev_hash: str = "0"
     timestamp: str = datetime.datetime.utcnow().strftime("%H:%M:%S")
     nonce: int = 0
 
+    # Method to get block hash
     def hash_block(self):
+        # SHA256 hash
         sha = hashlib.sha256()
 
-        record = str(self.record).encode()
-        sha.update(record)
+        # Array of instance variables    
+        instance_variables = [self.record,self.creator_id,self.timestamp,self.prev_hash, self.nonce]
 
-        creator_id = str(self.creator_id).encode()
-        sha.update(creator_id)
+        # Loop over instance variables
+        for i in instance_variables:
+            # Update SHA256 hash with encoded instance variable
+            sha.update(str(i).encode())
 
-        timestamp = str(self.timestamp).encode()
-        sha.update(timestamp)
-
-        prev_hash = str(self.prev_hash).encode()
-        sha.update(prev_hash)
-
-        nonce = str(self.nonce).encode()
-        sha.update(nonce)
-
+        # Return SHA256 Hexdigiset
         return sha.hexdigest()
 
-
+# Pychain class
 @dataclass
 class PyChain:
+    # Instance Vairbales
     chain: List[Block]
     difficulty: int = 4
 
