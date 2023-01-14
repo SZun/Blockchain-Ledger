@@ -49,6 +49,7 @@ import hashlib
 # @TODO
 # Create a Record Data Class that consists of the `sender`, `receiver`, and
 # `amount` attributes
+@dataclass
 class Record:
     sender: str
     receiver: str
