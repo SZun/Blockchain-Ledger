@@ -20,5 +20,50 @@ Below we can see that the `Validate Chain` button has been pressed. Below the bu
 
 Below we see that block inspector outputting the values for the block, which were selected in the dropdown above it.
 
-![Satoshi Block](./Resources/images/satoshi_block.png)
-![Vitalic Block](./Resources/images/vitalik_block.png)
+Satoshi BTC Block             |  Vitalik ETH Block
+:-------------------------:|:-------------------------:
+![Satoshi Block](./Resources/images/satoshi_block.png)  |  ![Vitalic Block](./Resources/images/vitalik_block.png)
+
+## Getting Started
+### Prerequisites
+
+You must have Python 3 & Pip installed
+
+```
+$ python3 --version
+Output: Python 3.10.8
+$ pip --verison
+Ouput: pip 22.2.2 from /Users/{#Username}/opt/anaconda3/lib/python3.9/site-packages/pip (python 3.9)
+```
+
+### Installing Dependencies
+
+```
+$ pip install pandas
+$ pip install streamlit
+```
+
+### Clone Repository
+```
+$ git clone git@github.com:SZun/PyChain-Ledger.git
+$ cd PyChain-Ledger
+```
+
+### Run The Application
+```
+$ streamlit run pychain.py
+```
+
+## Built With
+- [![Python 3.7.13](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)]([https://www.python.org/downloads/release/python-3713/)
+[![Python](https://img.shields.io/badge/Python-3.7.13-blue)](https://www.python.org/downloads/release/python-3713/) - Programming Language
+- [![Pandas](https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/docs/#) - Data analysis library
+
+### Python Libraries
+- [dataclasses](https://docs.python.org/3/library/dataclasses.html)
+- [datetime](https://docs.python.org/3/library/datetime.html)
+- [hashlib](https://docs.python.org/3/library/hashlib.html)
+- [typing](https://docs.python.org/3/library/typing.html)
+
+## Contributors
+- **Sam G. Zun** - [LinkedIn](https://www.linkedin.com/in/szun/) | [Github](https://github.com/SZun)
