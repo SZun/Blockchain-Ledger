@@ -20,9 +20,9 @@ Below we can see that the `Validate Chain` button has been pressed. Below the bu
 
 Below we see that block inspector outputting the values for the block, which were selected in the dropdown above it.
 
-Satoshi BTC Block             |  Vitalik ETH Block
+Satoshi Transaction             |  Vitalik Transaction
 :-------------------------:|:-------------------------:
-![Satoshi Block](./Resources/images/satoshi_block.png)  |  ![Vitalic Block](./Resources/images/vitalik_block.png)
+![Satoshi Block](./Resources/images/satoshi.png)  |  ![Vitalic Block](./Resources/images/vitalik.png)
 
 ## Getting Started
 ### Prerequisites
