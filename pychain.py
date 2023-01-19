@@ -17,7 +17,7 @@ class Record:
     # Instance varibales
     sender: str
     receiver: str
-    amount: str
+    amount: float
 
 # Block Class
 @dataclass
@@ -130,7 +130,7 @@ if st.button("Add Block"):
     # Adding new block to chain
     pychain.add_block(
         Block(
-            record=Record(sender=sender,receiver=receiver,amount=amount),
+            record=Record(sender=sender,receiver=receiver,amount=float(amount)),
             creator_id=42,
             prev_hash=pychain.chain[-1].hash_block()
         )
