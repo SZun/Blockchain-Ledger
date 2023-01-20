@@ -18,9 +18,9 @@ Below we can see that the `Validate Chain` button has been pressed. Below the bu
 
 ### Block Inspector
 
-Below we see that block inspector outputting the transactions which were selected in the dropdown above it.
+Below we see that block inspector outputting the information for the block which were selected in the dropdown above it.
 
-Satoshi Transaction             |  Vitalik Transaction
+Satoshi Block             |  Vitalik Block
 :-------------------------:|:-------------------------:
 ![Satoshi Block](./Resources/images/satoshi.png)  |  ![Vitalic Block](./Resources/images/vitalik.png)
 
